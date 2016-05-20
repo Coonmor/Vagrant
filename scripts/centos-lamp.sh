@@ -8,12 +8,12 @@ yum install -y git nano unzip screen
 
 #Apache
 yum install -y httpd httpd-devel httpd-tools
-systemctl enable httpd
 systemctl stop httpd
 
-rm -rf /var/www/http
-ls -s /vagrant /var/www/http
+rm -rf /var/www/html
+ln -s /vagrant /var/www/html
 
+systemctl enable httpd
 systemctl start httpd
 
 #PHP
