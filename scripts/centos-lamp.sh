@@ -26,4 +26,9 @@ systemctl start mariadb
 
 mysql -u roo -e "SHOW DATABASES";
 
+#Download starter files from GITHUB
+cd /vagrant
+sudo -u vagrant wget -q https://github.com/Coonmor/Vagrant/blob/master/files/index.html
+sudo -u vagrant wget -q https://github.com/Coonmor/Vagrant/blob/master/files/info.php
+
 systemctl restart httpd
