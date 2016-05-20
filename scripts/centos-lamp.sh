@@ -24,7 +24,7 @@ yum install -y mariadb-server
 systemctl enable mariadb
 systemctl start mariadb
 
-mysql -u roo -e "SHOW DATABASES";
+mysql -u root -e "SHOW DATABASES";
 
 #Download starter files from GITHUB
 cd /vagrant
